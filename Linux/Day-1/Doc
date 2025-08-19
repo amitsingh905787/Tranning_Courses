@@ -1,0 +1,35 @@
+Command Synopsis Cheat Sheet
+
+[THING] → Optional item.
+
+<THING> → Mandatory (required).
+
+THING … → Can be repeated multiple times.
+
+THING1 | THING2 → Use either one, not both.
+
+THING (italic) → Replace with the actual item.
+
+Manual Structure Cheat Sheet
+
+Section 1 → User commands (normal shell commands).
+
+Section 2 → System calls (kernel functions).
+
+Section 3 → C library functions (programming interfaces).
+
+Section 4 → Devices & special files (hardware/software device files).
+
+Section 5 → File formats & conventions (config files, formats).
+
+Section 6 → Games (available on the system).
+
+Section 7 → Miscellaneous (protocols, filesystems, topics).
+
+Section 8 → System admin tools & daemons (need root/admin privileges).
+
+In short:
+
+Command Synopsis explains how to read command syntax.
+
+Manual Structure tells you what each man section covers.

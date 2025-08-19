@@ -1,0 +1,7 @@
+Each time, Linux responded with the same error message:
+
+cat: invalid option -- 'k'
+Try 'cat --help' for more information.
+
+Takeaway: The cat command doesn’t have a -k flag. To check valid options, always run:
+cat --help
