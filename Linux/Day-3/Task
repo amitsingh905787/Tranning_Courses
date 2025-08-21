@@ -1,0 +1,66 @@
+Find Command (Advanced)
+
+Search files by name (-name, -iname) and size (-size with +, -, ranges).
+
+Limit search depth with -maxdepth.
+
+Use -exec to run commands on results (copy/move/delete).
+
+Created a haystack test environment and used find & locate to find needle.txt.
+
+Key Takeaway: find is extremely powerful for custom searches and automation.
+
+Viewing Files
+
+cat → View/join multiple files.
+
+tac → Reverse file vertically.
+
+rev → Reverse content horizontally.
+
+head, tail, less → View specific sections or scroll through large files.
+
+Sorting Data
+
+sort for alphabetic, numeric, reverse (-r), and unique (-u) sorting.
+
+Column-based sorting with sort -k (file size, months, link counts, etc.).
+
+Used -h for human-readable sizes and -M for months.
+
+Archiving & Compression
+
+tar → Create/extract archives.
+
+gzip → Faster, less compression.
+
+bzip2 → Slower, stronger compression.
+
+zip/unzip → Standard cross-platform compression.
+
+Project Tasks
+
+Secret Directory: Created hidden content, indexed with locate.
+
+Large File Analysis: Found and sorted files over 1MB using find + ls + sort.
+
+Automation & Scheduling
+
+Wrote shell scripts for directory creation, file backup, and logging.
+
+Scheduled recurring tasks with cron (hungry script writing logs every minute).
+
+Daily Learning Outcomes
+
+Mastered find for advanced search.
+
+Practiced file viewing & manipulation (cat, tac, rev, head, tail, less).
+
+Learned sorting techniques (sort, sort -k).
+
+Practiced archiving/compression (tar, gzip, bzip2, zip).
+
+Automated tasks with shell scripts and cron jobs.
+
+Difficulty: Advanced
+Next Focus: Text processing & regular expressions
