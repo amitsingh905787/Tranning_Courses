@@ -125,14 +125,7 @@ In this task, you create a group account. Group accounts can include user accoun
 1. Select the new group and review the **Members** and **Owners** information.
 
 >**Note:** You may be managing a large number of groups. Does your organization have a plan for creating groups and adding members?
-   
-## Extend your learning with Copilot
-
-Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
-+ What are the Azure PowerShell and CLI commands to create a security group called IT Admins? Provide the official command reference page.  
-+ Provide a step-by-step strategy for managing users and groups in Microsoft Entra ID.
-+ What are the steps in the Azure portal to bulk create users and groups?
-+ Provide a comparison table of internal and external Microsoft Entra ID user accounts. 
+    
 
 Congratulations on completing the lab. Here are some main takeways for this lab:
 
