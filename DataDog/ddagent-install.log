@@ -1,0 +1,281 @@
+[34m
+* Datadog Agent 7 install script v1.40.0
+[0m
+/usr/bin/systemctl
+[34m
+* Installing curl gnupg
+[0m
+Get:2 https://packages.microsoft.com/ubuntu/20.04/mssql-server-2019 focal InRelease [3,624 B]
+Get:3 https://packages.microsoft.com/ubuntu/20.04/prod focal InRelease [3,632 B]
+Get:4 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
+Get:1 https://packages.microsoft.com/repos/code stable InRelease [3,590 B]
+Get:5 http://dell.archive.canonical.com focal InRelease [540 kB]
+Get:6 https://packages.microsoft.com/ubuntu/20.04/mssql-server-2019 focal/main all Packages [717 B]
+Get:7 https://packages.microsoft.com/ubuntu/20.04/mssql-server-2019 focal/main amd64 Packages [18.1 kB]
+Get:8 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease [18.0 kB]
+Get:9 https://packages.microsoft.com/ubuntu/20.04/prod focal/main amd64 Packages [377 kB]
+Get:10 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,210 B]
+Get:11 http://in.archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:12 https://packages.microsoft.com/ubuntu/20.04/prod focal/main arm64 Packages [95.7 kB]
+Get:13 https://packages.microsoft.com/ubuntu/20.04/prod focal/main armhf Packages [27.9 kB]
+Get:14 https://packages.microsoft.com/ubuntu/20.04/prod focal/main all Packages [2,938 B]
+Get:15 https://packages.microsoft.com/repos/code stable/main arm64 Packages [20.8 kB]
+Get:16 https://packages.microsoft.com/repos/code stable/main amd64 Packages [20.7 kB]
+Get:17 https://packages.microsoft.com/repos/code stable/main armhf Packages [20.8 kB]
+Get:18 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 Packages [1,132 B]
+Get:19 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+Get:20 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main i386 Packages [1,132 B]
+Get:21 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main Translation-en [756 B]
+Get:22 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [3,564 kB]
+Get:23 http://security.ubuntu.com/ubuntu focal-security/main i386 Packages [881 kB]
+Get:24 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [518 kB]
+Get:25 http://security.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [74.6 kB]
+Get:26 http://security.ubuntu.com/ubuntu focal-security/main DEP-11 48x48 Icons [27.5 kB]
+Get:27 http://security.ubuntu.com/ubuntu focal-security/main DEP-11 64x64 Icons [47.5 kB]
+Get:28 http://security.ubuntu.com/ubuntu focal-security/main DEP-11 64x64@2 Icons [29 B]
+Get:29 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [14.4 kB]
+Get:30 http://security.ubuntu.com/ubuntu focal-security/restricted i386 Packages [42.5 kB]
+Get:31 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [3,768 kB]
+Get:32 http://in.archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+Get:33 http://dell.archive.canonical.com focal/somerville i386 Packages [5,584 B]
+Get:34 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [527 kB]
+Get:35 http://dell.archive.canonical.com focal/somerville amd64 Packages [8,678 B]
+Get:36 http://dell.archive.canonical.com focal/somerville-maester amd64 Packages [821 B]
+Get:37 http://dell.archive.canonical.com focal/somerville-maester i386 Packages [821 B]
+Get:38 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 DEP-11 Metadata [212 B]
+Get:39 http://security.ubuntu.com/ubuntu focal-security/restricted DEP-11 48x48 Icons [29 B]
+Get:40 http://security.ubuntu.com/ubuntu focal-security/restricted DEP-11 64x64 Icons [29 B]
+Get:41 http://security.ubuntu.com/ubuntu focal-security/restricted DEP-11 64x64@2 Icons [29 B]
+Get:42 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [584 B]
+Get:43 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1,040 kB]
+Get:44 http://security.ubuntu.com/ubuntu focal-security/universe i386 Packages [698 kB]
+Get:45 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [221 kB]
+Get:46 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [159 kB]
+Get:47 http://security.ubuntu.com/ubuntu focal-security/universe DEP-11 48x48 Icons [95.4 kB]
+Get:48 http://security.ubuntu.com/ubuntu focal-security/universe DEP-11 64x64 Icons [166 kB]
+Get:49 http://in.archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+Get:50 http://security.ubuntu.com/ubuntu focal-security/universe DEP-11 64x64@2 Icons [29 B]
+Get:51 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [22.4 kB]
+Get:52 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [26.6 kB]
+Get:53 http://security.ubuntu.com/ubuntu focal-security/multiverse i386 Packages [7,204 B]
+Get:54 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [6,448 B]
+Get:55 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 DEP-11 Metadata [940 B]
+Get:56 http://security.ubuntu.com/ubuntu focal-security/multiverse DEP-11 48x48 Icons [1,867 B]
+Get:57 http://security.ubuntu.com/ubuntu focal-security/multiverse DEP-11 64x64 Icons [2,497 B]
+Get:58 http://security.ubuntu.com/ubuntu focal-security/multiverse DEP-11 64x64@2 Icons [29 B]
+Get:59 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [604 B]
+Get:60 http://in.archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:61 http://in.archive.ubuntu.com/ubuntu focal/main i386 Packages [718 kB]
+Get:62 http://in.archive.ubuntu.com/ubuntu focal/main Translation-en [506 kB]
+Get:63 http://in.archive.ubuntu.com/ubuntu focal/main amd64 DEP-11 Metadata [494 kB]
+Get:64 http://in.archive.ubuntu.com/ubuntu focal/main DEP-11 48x48 Icons [98.4 kB]
+Get:65 http://in.archive.ubuntu.com/ubuntu focal/main DEP-11 64x64 Icons [163 kB]
+Get:66 http://in.archive.ubuntu.com/ubuntu focal/main DEP-11 64x64@2 Icons [15.8 kB]
+Get:67 http://in.archive.ubuntu.com/ubuntu focal/main amd64 c-n-f Metadata [29.5 kB]
+Get:68 http://in.archive.ubuntu.com/ubuntu focal/restricted i386 Packages [8,112 B]
+Get:69 http://in.archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [22.0 kB]
+Get:70 http://in.archive.ubuntu.com/ubuntu focal/restricted Translation-en [6,212 B]
+Get:71 http://in.archive.ubuntu.com/ubuntu focal/restricted amd64 c-n-f Metadata [392 B]
+Get:72 http://in.archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8,628 kB]
+Get:73 http://in.archive.ubuntu.com/ubuntu focal/universe i386 Packages [4,642 kB]
+Get:74 http://in.archive.ubuntu.com/ubuntu focal/universe Translation-en [5,124 kB]
+Get:75 http://in.archive.ubuntu.com/ubuntu focal/universe amd64 DEP-11 Metadata [3,603 kB]
+Get:76 http://in.archive.ubuntu.com/ubuntu focal/universe DEP-11 48x48 Icons [3,016 kB]
+Get:77 http://in.archive.ubuntu.com/ubuntu focal/universe DEP-11 64x64 Icons [7,794 kB]
+Get:78 http://in.archive.ubuntu.com/ubuntu focal/universe DEP-11 64x64@2 Icons [44.3 kB]
+Get:79 http://in.archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:80 http://in.archive.ubuntu.com/ubuntu focal/multiverse i386 Packages [74.7 kB]
+Get:81 http://in.archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:82 http://in.archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:83 http://in.archive.ubuntu.com/ubuntu focal/multiverse amd64 DEP-11 Metadata [48.4 kB]
+Get:84 http://in.archive.ubuntu.com/ubuntu focal/multiverse DEP-11 48x48 Icons [23.1 kB]
+Get:85 http://in.archive.ubuntu.com/ubuntu focal/multiverse DEP-11 64x64 Icons [192 kB]
+Get:86 http://in.archive.ubuntu.com/ubuntu focal/multiverse DEP-11 64x64@2 Icons [214 B]
+Get:87 http://in.archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9,136 B]
+Get:88 http://in.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [1,114 kB]
+Get:89 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3,955 kB]
+Get:90 http://in.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [600 kB]
+Get:91 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [276 kB]
+Get:92 http://in.archive.ubuntu.com/ubuntu focal-updates/main DEP-11 48x48 Icons [64.2 kB]
+Get:93 http://in.archive.ubuntu.com/ubuntu focal-updates/main DEP-11 64x64 Icons [103 kB]
+Get:94 http://in.archive.ubuntu.com/ubuntu focal-updates/main DEP-11 64x64@2 Icons [29 B]
+Get:95 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [18.0 kB]
+Get:96 http://in.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [3,922 kB]
+Get:97 http://in.archive.ubuntu.com/ubuntu focal-updates/restricted i386 Packages [44.1 kB]
+Get:98 http://in.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [548 kB]
+Get:99 http://in.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 DEP-11 Metadata [212 B]
+Get:100 http://in.archive.ubuntu.com/ubuntu focal-updates/restricted DEP-11 48x48 Icons [29 B]
+Get:101 http://in.archive.ubuntu.com/ubuntu focal-updates/restricted DEP-11 64x64 Icons [29 B]
+Get:102 http://in.archive.ubuntu.com/ubuntu focal-updates/restricted DEP-11 64x64@2 Icons [29 B]
+Get:103 http://in.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [604 B]
+Get:104 http://in.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1,262 kB]
+Get:105 http://in.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [823 kB]
+Get:106 http://in.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [303 kB]
+Get:107 http://in.archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [446 kB]
+Get:108 http://in.archive.ubuntu.com/ubuntu focal-updates/universe DEP-11 48x48 Icons [297 kB]
+Get:109 http://in.archive.ubuntu.com/ubuntu focal-updates/universe DEP-11 64x64 Icons [520 kB]
+Get:110 http://in.archive.ubuntu.com/ubuntu focal-updates/universe DEP-11 64x64@2 Icons [29 B]
+Get:111 http://in.archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [29.3 kB]
+Get:112 http://in.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [29.7 kB]
+Get:113 http://in.archive.ubuntu.com/ubuntu focal-updates/multiverse i386 Packages [8,440 B]
+Get:114 http://in.archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [8,316 B]
+Get:115 http://in.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Get:116 http://in.archive.ubuntu.com/ubuntu focal-updates/multiverse DEP-11 48x48 Icons [1,867 B]
+Get:117 http://in.archive.ubuntu.com/ubuntu focal-updates/multiverse DEP-11 64x64 Icons [2,497 B]
+Get:118 http://in.archive.ubuntu.com/ubuntu focal-updates/multiverse DEP-11 64x64@2 Icons [29 B]
+Get:119 http://in.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [688 B]
+Get:120 http://in.archive.ubuntu.com/ubuntu focal-backports/main i386 Packages [36.1 kB]
+Get:121 http://in.archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]
+Get:122 http://in.archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB]
+Get:123 http://in.archive.ubuntu.com/ubuntu focal-backports/main amd64 DEP-11 Metadata [7,996 B]
+Get:124 http://in.archive.ubuntu.com/ubuntu focal-backports/main DEP-11 48x48 Icons [7,156 B]
+Get:125 http://in.archive.ubuntu.com/ubuntu focal-backports/main DEP-11 64x64 Icons [10.7 kB]
+Get:126 http://in.archive.ubuntu.com/ubuntu focal-backports/main DEP-11 64x64@2 Icons [29 B]
+Get:127 http://in.archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1,420 B]
+Get:128 http://in.archive.ubuntu.com/ubuntu focal-backports/restricted amd64 DEP-11 Metadata [216 B]
+Get:129 http://in.archive.ubuntu.com/ubuntu focal-backports/restricted DEP-11 48x48 Icons [29 B]
+Get:130 http://in.archive.ubuntu.com/ubuntu focal-backports/restricted DEP-11 64x64 Icons [29 B]
+Get:131 http://in.archive.ubuntu.com/ubuntu focal-backports/restricted DEP-11 64x64@2 Icons [29 B]
+Get:132 http://in.archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:133 http://in.archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB]
+Get:134 http://in.archive.ubuntu.com/ubuntu focal-backports/universe i386 Packages [13.8 kB]
+Get:135 http://in.archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB]
+Get:136 http://in.archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [30.5 kB]
+Get:137 http://in.archive.ubuntu.com/ubuntu focal-backports/universe DEP-11 48x48 Icons [13.3 kB]
+Get:138 http://in.archive.ubuntu.com/ubuntu focal-backports/universe DEP-11 64x64 Icons [22.7 kB]
+Get:139 http://in.archive.ubuntu.com/ubuntu focal-backports/universe DEP-11 64x64@2 Icons [29 B]
+Get:140 http://in.archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]
+Get:141 http://in.archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 DEP-11 Metadata [212 B]
+Get:142 http://in.archive.ubuntu.com/ubuntu focal-backports/multiverse DEP-11 48x48 Icons [29 B]
+Get:143 http://in.archive.ubuntu.com/ubuntu focal-backports/multiverse DEP-11 64x64 Icons [29 B]
+Get:144 http://in.archive.ubuntu.com/ubuntu focal-backports/multiverse DEP-11 64x64@2 Icons [29 B]
+Get:145 http://in.archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 65.1 MB in 9min 59s (109 kB/s)
+Reading package lists...
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Packages (main/binary-armhf/Packages) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Packages (main/binary-arm64/Packages) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Translations (main/i18n/Translation-en_IN) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11-icons-small (main/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11-icons (main/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11-icons-hidpi (main/dep11/icons-64x64@2.tar) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Packages (main/binary-armhf/Packages) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Packages (main/binary-arm64/Packages) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Translations (main/i18n/Translation-en_IN) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11-icons-small (main/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11-icons (main/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11-icons-hidpi (main/dep11/icons-64x64@2.tar) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.68.0-1ubuntu2.25).
+gnupg is already the newest version (2.2.19-3ubuntu2.5).
+The following packages were automatically installed and are no longer required:
+  docutils-common python3-docutils python3-pyasn1 python3-roman python3-rsa
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+[34m
+* Installing APT package sources for Datadog
+[0m
+gpg: directory '/root/.gnupg' created
+gpg: /root/.gnupg/trustdb.gpg: trustdb created
+gpg: key E6266D4AC0962C7D: public key "Datadog, Inc. APT key (2023-04-20) (APT key) <package+aptkey@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg: key 0D826EB906462314: public key "Datadog, Inc. APT key (2024-05-15) (APT key) <package+aptkey@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg: key E6266D4AC0962C7D: "Datadog, Inc. APT key (2023-04-20) (APT key) <package+aptkey@datadoghq.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+gpg: key 32637D44F14F620E: public key "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg: key D3A80E30382E94DE: public key "Datadog, Inc <package@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+Ign:1 https://apt.datadoghq.com stable InRelease
+Get:2 https://apt.datadoghq.com stable Release [26.0 kB]
+Get:3 https://apt.datadoghq.com stable Release.gpg [801 B]
+Get:4 https://apt.datadoghq.com stable/7 i386 Packages [1,184 B]
+Get:5 https://apt.datadoghq.com stable/7 amd64 Packages [112 kB]
+Get:6 https://apt.datadoghq.com stable/7 all Packages [1,184 B]
+Fetched 141 kB in 2s (89.6 kB/s)
+Reading package lists...
+  [33mInstalling package(s): datadog-agent datadog-signing-keys
+[0m
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  docutils-common python3-docutils python3-pyasn1 python3-roman python3-rsa
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  datadog-agent datadog-signing-keys
+0 upgraded, 2 newly installed, 0 to remove and 2 not upgraded.
+Need to get 157 MB of archives.
+After this operation, 726 MB of additional disk space will be used.
+Get:1 https://apt.datadoghq.com stable/7 amd64 datadog-agent amd64 1:7.70.0-1 [157 MB]
+Get:2 https://apt.datadoghq.com stable/7 amd64 datadog-signing-keys all 1:1.4.0-1 [23.7 kB]
+Fetched 157 MB in 29s (5,508 kB/s)
+Selecting previously unselected package datadog-agent.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 251098 files and directories currently installed.)
+Preparing to unpack .../datadog-agent_1%3a7.70.0-1_amd64.deb ...
+Unpacking datadog-agent (1:7.70.0-1) ...
+Selecting previously unselected package datadog-signing-keys.
+Preparing to unpack .../datadog-signing-keys_1%3a1.4.0-1_all.deb ...
+Unpacking datadog-signing-keys (1:1.4.0-1) ...
+Setting up datadog-agent (1:7.70.0-1) ...
+Creating file: '/opt/datadog-agent/.post_python_installed_packages.txt'
+File '/opt/datadog-agent/.diff_python_installed_packages.txt' not found.
+Setting up datadog-signing-keys (1:1.4.0-1) ...
+Processing triggers for systemd (245.4-4ubuntu3.24) ...
+W: --force-yes is deprecated, use one of the options starting with --allow instead.
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Packages (main/binary-armhf/Packages) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Packages (main/binary-arm64/Packages) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Translations (main/i18n/Translation-en_IN) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11-icons-small (main/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11-icons (main/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target DEP-11-icons-hidpi (main/dep11/icons-64x64@2.tar) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/microsoft-prod.list:1 and /etc/apt/sources.list.d/msprod.list:1
+[34m
+* Adding your API key to the Datadog Agent configuration: /etc/datadog-agent/datadog.yaml
+[0m
+[34m
+* Setting SITE in the Datadog Agent configuration: /etc/datadog-agent/datadog.yaml
+[0m
+[34m
+* Adding your DD_ENV to the Datadog Agent configuration: /etc/datadog-agent/datadog.yaml
+[0m
+/usr/bin/systemctl
+[34m* Starting the Datadog Agent...
+[0m
+[32m  Your Datadog Agent is running and functioning properly.
+[0m[32m  It will continue to run in the background and submit metrics to Datadog.
+[0m[32m  If you ever want to stop the Datadog Agent, run:
+
+      sudo systemctl stop datadog-agent
+
+  And to run it again run:
+
+      sudo systemctl start datadog-agent[0m
+
